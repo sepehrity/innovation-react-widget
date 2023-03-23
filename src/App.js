@@ -1,21 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img
+          src="https://www.dentsu.com/assets/images/main-logo-alt.png"
+          className="App-logo"
+          alt="logo"
+        />
+        <p>Integrated Marketing Solutions & Agency Services</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.dentsu.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Read more
         </a>
       </header>
     </div>
