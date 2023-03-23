@@ -19,14 +19,6 @@ function App() {
           alt="logo"
         />
         <p>Integrated Marketing Solutions & Agency Services</p>
-        <a
-          className="App-link"
-          href="https://www.dentsu.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Read more
-        </a>
       </header>
       <ul>
         {data?.map((item) => {
