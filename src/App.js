@@ -6,8 +6,8 @@ function App() {
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
-      .then(res => res.json())
-      .then(response => setData(response.products));
+      .then((res) => res.json())
+      .then((response) => setData(response.products));
   }, []);
 
   return (
@@ -27,12 +27,12 @@ function App() {
         >
           Read more
         </a>
-        <ul>
-          {data?.map((item) => {
-            return <li key={item.id}>{item.title}</li>
-          })}
-        </ul>
       </header>
+      <ul>
+        {data?.map((item) => {
+          return <li key={item.id}>{item.title}</li>;
+        })}
+      </ul>
     </div>
   );
 }
