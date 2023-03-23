@@ -20,11 +20,13 @@ function App() {
         />
         <p>Integrated Marketing Solutions & Agency Services</p>
       </header>
-      <ul>
-        {data?.map((item) => {
-          return <li key={item.id}>{item.title}</li>;
-        })}
-      </ul>
+      <div style={{ display: "flex", flex: 1}}>
+        <ul style={{ height: "100%", backgroundColor: "#282c34" }}>
+          {data?.map((item) => {
+            return <li key={item.id}>{item.title}</li>;
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
