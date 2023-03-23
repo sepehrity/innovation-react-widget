@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/products")
+      .then(res => res.json())
+      .then(response => setData(response.products));
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +27,11 @@ function App() {
         >
           Read more
         </a>
+        <ul>
+          {data?.map((item) => {
+            return <li key={item.id}>{item.title}</li>
+          })}
+        </ul>
       </header>
     </div>
   );
